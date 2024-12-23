@@ -11,7 +11,7 @@ const App = () => {
 
   // Cargar metadata desde un archivo JSON
   const loadMetadata = async () => {
-    const response = await fetch("/metadata4.json");
+    const response = await fetch("/VIRAT_S_010003_03_000219_000259.json.json");
     const data = await response.json();
     setMetadata(data);
   };
@@ -147,7 +147,7 @@ const App = () => {
       <h1>Heatmap Video Analysis</h1>
       <div className="video-container">
         <video ref={videoRef} controls>
-          <source src="/video-corto2.mp4" type="video/mp4" />
+          <source src="/VIRAT_S_010003_03_000219_000259.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <button onClick={captureFrameAndHeatmap}>Generate Heatmap</button>
